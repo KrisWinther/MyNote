@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/main"
+    android:background="@drawable/mynote_background_v3"
+    tools:context="com.example.mynote1.read">
+
+<FrameLayout
+    android:id="@+id/farmeAM"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/btn"
+    app:layout_constraintStart_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/back1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/back_btn_pressed"/>
+        <TextView
+            android:id="@+id/updater"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="20dp"
+            android:text="@string/upd"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/but_true_pressed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/deliter"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="180dp"
+            android:layout_gravity="end|center"
+            android:background="@drawable/but_false_pressed"
+            android:gravity="center"
+            android:text="@string/deliter"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</FrameLayout>
+    <ScrollView
+        android:id="@+id/Scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_filler"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+                <TextView
+                    android:id="@+id/textmain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="5dp"
+                    android:textColorHint="@color/blue_hint"
+                    android:minHeight="48dp"
+                    android:hint="@string/loading_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/back"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_filler"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/textdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="18sp"
+                    android:minHeight="48dp"
+                    android:gravity="start|center"
+                    android:textColorHint="@color/blue_hint"
+                    android:textColor="@color/black"
+                    android:textColorLink="@color/orange"
+                    android:linksClickable="true"
+                    android:hint="@string/loading_description"
+                    app:layout_constraintTop_toBottomOf="@+id/textmain"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

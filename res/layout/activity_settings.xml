@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/farmeAM"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/maintextSets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/back1"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:background="@drawable/back_btn_pressed"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ThemeChoice"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:text="@string/d_b_theme"
+        android:textSize="17sp"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+    <TextView
+        android:id="@+id/languageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LanguageChoice"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/languageRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioEnglish"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:text="English"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:id="@+id/radioRussian"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Русский язык" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/saveButtonSets"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/but_true_pressed"
+        android:gravity="center"
+        android:text="@string/savesets"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

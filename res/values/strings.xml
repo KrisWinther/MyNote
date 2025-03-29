@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyNote</string>
+    <string name="SavedNotes">Ваши земетки:</string>
+    <string name="description">Напишите что-нибудь...</string>
+    <string name="name">Заголовок</string>
+    <string name="saving">Сохранить</string>
+    <string name="back1">Назад</string>
+    <string name="update">Применить</string>
+    <string name="deliter">Удалить</string>
+    <string name="testname">Пример заметки</string>
+    <string name="plus">+</string>
+    <string name="back">Назад</string>
+    <string name="settings">Настройки</string>
+    <string name="savesets">Сохранить настройки</string>
+    <string name="RusLang">Русский</string>
+    <string name="EngLang">Английский</string>
+    <string name="LanguageChoice">Выберите язык</string>
+    <string name="d_b_theme">Светлая/Тёмная тема:</string>
+    <string name="ThemeChoice">Выберите тему</string>
+    <string name="SavedWrites">Сохранённые записи:</string>
+    <string name="upd">Редактировать</string>
+    <string name="descripting">Ваш текст скоро появится...</string>
+    <string name="loading_description">Загружаем сохранённую заметку...</string>
+    <string name="loading_title">Загрузка...</string>
+    <string name="info_title">Информация о приложении</string>
+    <string name="version">Версия 1.1.3</string>
+    <string name="information_all">MyNote - приложение для заметок, работающее при помощи базы данных Firebase тип Firestore.\n\nВНИМАНИЕ: На данный момент приложение не поддерживает функцию добавления удалённых файлов в корзину, а также восстановления из неё.\n\nПриложение является лишь демонстрационной версией и не поддерживает работу нескольких пользователей.</string>
+</resources>
